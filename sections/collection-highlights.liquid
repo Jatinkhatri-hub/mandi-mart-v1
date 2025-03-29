@@ -29,7 +29,7 @@
           {% case block.type %}
             {% when 'featured_collection' %}
               <li
-                class="container__collection-card {% if settings.animations-reveal_on_scroll %} scroll-trigger animate--slide-in {% endif %}"
+                class="container__collection-card {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                 data-cascade
