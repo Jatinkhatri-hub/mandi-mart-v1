@@ -78,6 +78,20 @@
     },
     "collection_highlights_DNtrD9": {
       "type": "collection-highlights",
+      "blocks": {
+        "featured_collection_cpWa99": {
+          "type": "featured_collection",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_218.png",
+            "collection": "algonot",
+            "title": "Best Seller",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_cpWa99"
+      ],
       "settings": {
         "title": "Collection Highlights",
         "heading_size": "h1"
