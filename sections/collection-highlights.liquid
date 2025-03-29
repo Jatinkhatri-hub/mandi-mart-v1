@@ -22,7 +22,7 @@
       {%- endif -%}
     </div>
     <div class="{% if settings.animations_reaveal_on_scroll %} scroll-trigger animate--slide-in" {% endif %}>
-      <ul>
+      <ul class="collection">
         {%- for block in section.blocks -%}
           {% case block.type %}
             {% when 'featured_collection' %}
@@ -33,8 +33,12 @@
                 data-cascade
                 style="--animation-order: {{ forloop.index }};"
                 {% endif %}>
-                  {% render 'collection-card', collection: block.settings.collection, image: block.settings.image, title: block.settings.title, class_size: block.settings.heading_size %}
-                </li>
+                {% render 'collection-card'
+                  , collection: block.settings.collection
+                  , image: block.settings.image
+                  , title: block.settings.title
+                  , class_size: block.settings.heading_size %}
+              </li>
           {% endcase %}
         {%- endfor -%}
       </ul>
