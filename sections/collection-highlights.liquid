@@ -1,4 +1,3 @@
-
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -16,127 +15,120 @@
 <div class="color-{{ secton.settings.color_scheme }} isolate gradient">
   <div class="section-{{ section.id }}-padding page-width ">
     <div>
-    {%- if section.settings.title != blank -%} 
-      <h1 class="{{ section.settings.heading_size }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in {% endif %}">
-        {{ section.settings.title }}
-      </h1>
-    {%- endif -%}
+      {%- if section.settings.title != blank -%}
+        <h1 class="{{ section.settings.heading_size }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in {% endif %}">
+          {{ section.settings.title }}
+        </h1>
+      {%- endif -%}
     </div>
     <div class="{% if settings.animations_reaveal_on_scroll %} scroll-trigger animate--slide-in" {% endif %}>
-      <ul>
-
-      </ul>
+      <ul></ul>
     </div>
   </div>
 </div>
 
 
-{%  schema  %} 
-{
-  "name": "Collection Highlight",
-  "tag": "section",
-  "class": "section",
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
-  
-  "settings": [
-    {
-      "type": "header",
-      "content": "Text"
+{% schema %}
+  {
+    "name": "Collection Highlight",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
     },
-    {
-      "type": "inline_richtext",
-      "id": "title",
-      "default": "Collection Highlights",
-      "label": "Heading"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
-        },
-        {
-          "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
-        },
-        {
-          "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
-        },
-        {
-          "value": "hxl",
-          "label": "t:sections.all.heading_size.options__4.label"
-        },
-        {
-          "value": "hxxl",
-          "label": "t:sections.all.heading_size.options__5.label"
-        }
-      ],
-      "default": "h1",
-      "label": "t:sections.all.heading_size.label"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "featured_collection",
-      "name": "Featured Collection",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Feature Image"
-        },
-         {
-      "type": "header",
-      "content": "Text"
-    },
-    {
-      "type": "inline_richtext",
-      "id": "title",
-      "default": "Title",
-      "label": "Heading"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
-        },
-        {
-          "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
-        },
-        {
-          "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
-        },
-        {
-          "value": "hxl",
-          "label": "t:sections.all.heading_size.options__4.label"
-        },
-        {
-          "value": "hxxl",
-          "label": "t:sections.all.heading_size.options__5.label"
-        }
-      ],
-      "default": "h1",
-      "label": "t:sections.all.heading_size.label"
-    }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Collection Highlights"
-    }
-  ]
-  
-}
 
-{% endschema %} 
+    "settings": [
+      {
+        "type": "header",
+        "content": "Text"
+      }, {
+        "type": "inline_richtext",
+        "id": "title",
+        "default": "Collection Highlights",
+        "label": "Heading"
+      }, {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          },
+          {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          },
+          {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          },
+          {
+            "value": "hxl",
+            "label": "t:sections.all.heading_size.options__4.label"
+          }, {
+            "value": "hxxl",
+            "label": "t:sections.all.heading_size.options__5.label"
+          }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "featured_collection",
+        "name": "Featured Collection",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Feature Image"
+          }, 
+          
+          {
+            "type": "header",
+            "content": "Text"
+          }, {
+            "type": "inline_richtext",
+            "id": "title",
+            "default": "Title",
+            "label": "Heading"
+          }, {
+            "type": "select",
+            "id": "heading_size",
+            "options": [
+              {
+                "value": "h2",
+                "label": "t:sections.all.heading_size.options__1.label"
+              },
+              {
+                "value": "h1",
+                "label": "t:sections.all.heading_size.options__2.label"
+              },
+              {
+                "value": "h0",
+                "label": "t:sections.all.heading_size.options__3.label"
+              },
+              {
+                "value": "hxl",
+                "label": "t:sections.all.heading_size.options__4.label"
+              }, {
+                "value": "hxxl",
+                "label": "t:sections.all.heading_size.options__5.label"
+              }
+            ],
+            "default": "h1",
+            "label": "t:sections.all.heading_size.label"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection Highlights"
+      }
+    ]
+
+  }
+
+{% endschema %}
