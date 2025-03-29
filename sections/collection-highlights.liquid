@@ -17,7 +17,7 @@
   <div class="section-{{ section.id }}-padding ">
     <div>
     {%- if section.settings.title != blank -%} 
-      <h1 class="{{ section.settings.heading_size }} {% if settings.animations_reveal_on_scroll %}  {% endif %}">
+      <h1 class="{{ section.settings.heading_size }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate {% endif %}">
 
       </h1>
     {%- endif -%}
