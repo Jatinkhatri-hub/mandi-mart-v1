@@ -18,7 +18,7 @@
     <div>
     {%- if section.settings.title != blank -%} 
       <h1 class="{{ section.settings.heading_size }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in {% endif %}">
-        {{ section.s }}
+        {{ section.settings.title }}
       </h1>
     {%- endif -%}
     </div>
