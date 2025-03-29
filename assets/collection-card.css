@@ -1,4 +1,5 @@
 .container__collection-card {
   flex: 1;
-  max-width: 27;
+  max-width: 275px;
+  max-height: ;
 }
