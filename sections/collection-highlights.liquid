@@ -26,16 +26,15 @@
         {%- for block in section.blocks -%}
           {% case block.type %}
             {% when 'featured_collection' %}
-          <li 
-            class="{% if settings.animations-reveal_on_scroll %} scroll-trigger animate--slide-in {% endif %}"
-            {{ block.shopify_attributes }}
-            {% if settings.animations_reveal_on_scroll %} 
-              data-cascade
-              style="--animation-order: {{ forloop.index }};"
-            {% endif %}
-            >
-
-          </li>
+              <li
+                class="{% if settings.animations-reveal_on_scroll %} scroll-trigger animate--slide-in {% endif %}"
+                {{ block.shopify_attributes }}
+                {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                style="--animation-order: {{ forloop.index }};"
+                {% endif %}>
+                  {}
+                </li>
           {% endcase %}
         {%- endfor -%}
       </ul>
@@ -99,7 +98,7 @@
             "type": "image_picker",
             "id": "image",
             "label": "Feature Image"
-          }, 
+          },
           {
             "type": "collection",
             "id": "collection",
@@ -108,7 +107,8 @@
           {
             "type": "header",
             "content": "Text"
-          }, {
+          },
+          {
             "type": "inline_richtext",
             "id": "title",
             "default": "Title",
