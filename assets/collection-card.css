@@ -4,4 +4,7 @@
   max-height: 275px;
 }
 
-.c
+.card__image-wrapper {
+  overflow: hidden;
+  
+}
