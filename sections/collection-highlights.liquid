@@ -16,7 +16,8 @@
 <div class="color-{{ secton.settings.color_scheme }} isolate gradient">
   <div class="section-{{ section.id }}-padding ">
     <div>
-      
+{%- if section.settings.title != blank -%} 
+{%- endif -%}
     </div>
   </div>
 </div>
