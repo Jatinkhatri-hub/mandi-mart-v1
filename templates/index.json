@@ -87,10 +87,20 @@
             "title": "Best Seller",
             "heading_size": "h1"
           }
+        },
+        "featured_collection_tALwgn": {
+          "type": "featured_collection",
+          "settings": {
+            "image": "shopify://shop_images/60_Sale_2.png",
+            "collection": "",
+            "title": "Title",
+            "heading_size": "h1"
+          }
         }
       },
       "block_order": [
-        "featured_collection_cpWa99"
+        "featured_collection_cpWa99",
+        "featured_collection_tALwgn"
       ],
       "settings": {
         "title": "Collection Highlights",
