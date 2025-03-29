@@ -16,3 +16,9 @@
 .card__img-wrapper img {
   width: 100%;
 }
+
+
+.card__title {
+  text-align: center;
+  
+}
