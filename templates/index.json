@@ -91,16 +91,36 @@
         "featured_collection_tALwgn": {
           "type": "featured_collection",
           "settings": {
-            "image": "shopify://shop_images/60_Sale_2.png",
+            "image": "shopify://shop_images/Group_1000007089.png",
+            "collection": "anrc-protocol",
+            "title": "On Sale",
+            "heading_size": "h1"
+          }
+        },
+        "featured_collection_LXtkmg": {
+          "type": "featured_collection",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_219.png",
             "collection": "",
-            "title": "Title",
+            "title": "New Arrivals",
+            "heading_size": "h1"
+          }
+        },
+        "featured_collection_BeDVd3": {
+          "type": "featured_collection",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000007091_1.png",
+            "collection": "anrc-protocol-1",
+            "title": "Top Brands",
             "heading_size": "h1"
           }
         }
       },
       "block_order": [
         "featured_collection_cpWa99",
-        "featured_collection_tALwgn"
+        "featured_collection_tALwgn",
+        "featured_collection_LXtkmg",
+        "featured_collection_BeDVd3"
       ],
       "settings": {
         "title": "Collection Highlights",
