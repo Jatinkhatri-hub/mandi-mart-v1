@@ -5,6 +5,9 @@
 
 .card__image-wrapper {
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-height: ;
 }
 
 .card__img-wrapper img {
