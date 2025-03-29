@@ -30,3 +30,9 @@
   text-align: center;
   font-weight: 600;
 }
+
+@media screen and (max-width: 789px) {
+  .collection__highlights-list {
+    gap: 20px;
+  }
+}
