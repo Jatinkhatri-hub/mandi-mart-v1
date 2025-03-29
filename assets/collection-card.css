@@ -32,7 +32,7 @@
 }
 
 @media screen and (max-width: 789px) {
-  .collection__highlights-list {
-    gap: 20px;
+  .card__title {
+    font-size: ;
   }
 }
