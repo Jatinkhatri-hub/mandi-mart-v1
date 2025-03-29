@@ -1,4 +1,4 @@
-{{ 'collection-hight' }}
+{{ 'collection-highlights.css' |  asset_url |  stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -29,7 +29,7 @@
           {% case block.type %}
             {% when 'featured_collection' %}
               <li
-                class="{% if settings.animations-reveal_on_scroll %} scroll-trigger animate--slide-in {% endif %}"
+                class="container{% if settings.animations-reveal_on_scroll %} scroll-trigger animate--slide-in {% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                 data-cascade
