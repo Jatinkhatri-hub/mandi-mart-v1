@@ -1,4 +1,5 @@
 .collection__hightlights-list {
   display: flex;
-  flex
+  flex-wrap: wrap;
+  
 }
