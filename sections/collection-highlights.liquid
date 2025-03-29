@@ -22,7 +22,7 @@
       {%- endif -%}
     </div>
     <div class="{% if settings.animations_reaveal_on_scroll %} scroll-trigger animate--slide-in" {% endif %}>
-      <ul class="collection__highlights-">
+      <ul class="collection__highlights-list">
         {%- for block in section.blocks -%}
           {% case block.type %}
             {% when 'featured_collection' %}
