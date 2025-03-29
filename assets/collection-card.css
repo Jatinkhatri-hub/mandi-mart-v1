@@ -7,7 +7,9 @@
   overflow: hidden;
   width: 100%;
   height: 100%;
-  max-height: ;
+  max-height: 275px;
+  max-width: 275px;
+  ba
 }
 
 .card__img-wrapper img {
