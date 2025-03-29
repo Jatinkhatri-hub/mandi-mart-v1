@@ -33,7 +33,7 @@
                 data-cascade
                 style="--animation-order: {{ forloop.index }};"
                 {% endif %}>
-                  {}
+                  {% render 'collection-card', collection %}
                 </li>
           {% endcase %}
         {%- endfor -%}
