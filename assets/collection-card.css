@@ -8,3 +8,6 @@
   overflow: hidden;
 }
 
+.card__img-wrapper img {
+  width: 100%;
+}
