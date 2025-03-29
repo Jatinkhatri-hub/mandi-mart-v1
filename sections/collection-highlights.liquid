@@ -24,6 +24,7 @@
     <div class="{% if settings.animations_reaveal_on_scroll %} scroll-trigger animate--slide-in" {% endif %}>
       <ul>
         {%- for block in section.blocks -%}
+          {}
           <li 
             class="{% if settings.animations-reveal_on_scroll %} scroll-trigger animate--slide-in {% endif %}"
             {{ block.shopify_attributes }}
