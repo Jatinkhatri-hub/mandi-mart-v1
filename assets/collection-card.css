@@ -15,7 +15,7 @@
   border-radius: 100%;
   display: flex;
   align-items: center;
-  jus
+  justify-content: center;
 }
 
 .card__img-wrapper img {
