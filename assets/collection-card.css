@@ -13,6 +13,9 @@
   min-height: 275px;
   background-image: radial-gradient(hsla(177, 71%, 70%, 1), hsla(177, 50%, 46%, 1));
   border-radius: 100%;
+  display: flex;
+  align-items: center;
+  jus
 }
 
 .card__img-wrapper img {
