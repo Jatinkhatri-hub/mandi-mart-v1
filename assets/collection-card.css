@@ -1,9 +1,10 @@
 .container__collection-card {
   flex: 1;
   max-width: 275px;
+  min-width: 160px;
+  min-height: 160px;
   text-decoration: none;
   list-style-type: none;
-  
 }
 
 .card__img-wrapper {
