@@ -9,7 +9,7 @@
   height: 100%;
   max-height: 275px;
   max-width: 275px;
-  background-image: radial-gradient();
+  background-image: radial-gradient(hsla(177, 71%, 70%, 1)),;
 }
 
 .card__img-wrapper img {
