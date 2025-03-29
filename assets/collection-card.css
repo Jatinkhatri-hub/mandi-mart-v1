@@ -1,7 +1,6 @@
 .container__collection-card {
   flex: 1;
   max-width: 275px;
-  max-height: 275px;
 }
 
 .card__image-wrapper {
